@@ -15,7 +15,7 @@ interface ImageData {
   loading?: boolean;
 }
 
-const DeepfakeDetector = () => {
+const ForgeryDetector = () => {
   const [images, setImages] = useState<ImageData[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [batchProcessing, setBatchProcessing] = useState(false);
@@ -236,8 +236,8 @@ const DeepfakeDetector = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-2">🕵️‍♂️ Image Forgery & Deepfake Detector</h1>
-          <p className="text-gray-600">Upload images to detect if they're Authentic, Forged or Deepfaked</p>
+           <h1 className="text-4xl font-bold text-gray-800 mb-2">🕵️‍♂️ Image Forgery Detector</h1>
+          <p className="text-gray-600">Upload images to detect if they're Authentic or Fake</p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
@@ -471,4 +471,4 @@ const DeepfakeDetector = () => {
   );
 };
 
-export default DeepfakeDetector;
+export default ForgeryDetector;

@@ -1,3 +1,5 @@
+# 🕵️ Image Forgery Detection
+
 A full-stack application that detects whether an uploaded image is fake or real.
 
 ## Features
